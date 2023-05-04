@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+
+.custom-margin {
+    margin-top: 50vh;
+}
+.body-content {
+    font-family: 'Gloock', serif;
+    font-size: 3vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+/* .center-body {
+    padding-top: 20vh;
+} */
+
+.center-body h2,h3,h4{
+    padding: 1vh;
+}
+
+.text-body {
+    margin-top: 10vh;
+}
+
+
+  
+h3 span, h4 span{
+    color:#e7450a
+}
+
+.list-inline {
+    margin-left: 1vh;
+    padding-left: 0.1vh;
+}
+
+.list-inline-item a i {
+    color: white;
+}
+  
+.list-inline-item a i:hover {
+    color: violet;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.2);
+}

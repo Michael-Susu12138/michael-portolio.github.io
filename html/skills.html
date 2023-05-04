@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="https://kit.fontawesome.com/ca526a9c50.js" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.14/vanta.net.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
+    <title>Skills</title>
+
+    <link rel="stylesheet" href="../css/universal.css">
+    <link rel="stylesheet" href="../css/navigator.css">
+    <link rel="stylesheet" href="../css/skills.css">
+</head>
+<body id= "body-content"class="p-0 m-0 border-0" style="height: 200vh; width: 100vw;">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand" href="#"><img src="../src/logo Small.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Me
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item active" href="#">Experience/Skills</a></li>
+                  <li><a class="dropdown-item" href="./hobbies.html">Hobbies</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./learnmore.html">Learn More</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 ">
+
+      <!-- my skills: c/c++, unity etc -->
+      <!-- skill section -->
+        <h1> My Skills </h2>
+        
+        
+        <canvas id="pie-chart"></canvas>
+                  
+      
+        <div class="skill-icons d-flex justify-content-around mt-xl-5">
+          <div class="icon static-gif">
+            <img src="../src/logos/icons8-python-50.png" alt="">
+            <h5> Python3</h5>
+          </div>
+          <div class="icon">
+            <img src="../src/logos/icons8-c++-50.png" alt="">
+            <h5> C/C++</h5>
+          </div>
+          <div class="icon">
+            <img src="../src/logos/icons8-c-sharp-logo-50.png" alt="">
+            <h5> C#</h5>
+          </div>
+          <div class="icon">
+            <img src="../src/logos/icons8-java-50.png" alt="">
+            <h5> Java </h5>
+          </div>
+          <div class="icon">
+            <img src="../src/logos/icons8-javascript-50.png" alt="">
+            <h5> JavaScript </h5>
+          </div>
+          <div class="icon">
+            <img src="../src/logos/icons8-html-5-50.png" alt="">
+            <h5> HTML </h5>
+          </div>
+          <div class="icon">
+            <img src="../src/logos/icons8-css-50.png" alt="">
+            <h5> CSS</h5>
+          </div>
+          <div class="icon">
+            <img src="../src/logos/icons8-unity-50.png" alt="">
+            <h5> Unity </h5>
+          </div>
+        </div>
+
+        
+      <!-- play game button and iframe -->
+      <div class="d-flex h-100 mt-5">
+        <div class="mx-auto">
+          <button id="toggle-iframe" class="glow-on-hover"> Show/Hide Game </button>
+        </div>
+      </div>
+  
+      <div class="d-flex h-100 mt-5">
+        <div class="align-self-center mx-auto">
+          <iframe id="game-iframe" frameborder="0" src="https://itch.io/embed-upload/7366398?color=333333" allowfullscreen="" width="960" height="620" style="display: none;"></iframe>
+        </div>
+      </div>
+        
+
+
+      <!-- my experience -->
+        <div class="accordion" id="accordionExample">
+            <h1> My Experience </h1>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Java Development Intern -- Google Shanghai
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>12/2022-2/2023</strong> 
+                  <ul>
+                    <li> Configure the dependencies for the <code>SpringBoot</code> project </li>
+                    <li>  Construct the login interfaces with token validation, saving the sessions </li>
+                    <li> Handel databases using <code>MyBatis3</code>  </li>
+                    <li> Debug and code for assignment </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Software Developper -- Smart Wearable Bio-Tracker for TeleRehab and TeleMonitoring
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>1/2023-5/2023</strong> 
+                    <ul>
+                        <li><a href="https://sites.google.com/nyu.edu/nyuwearablemmg/about?authuser=0" target="_blank"> Offical Website </a></li>
+                        <li> Using <code>Python Flask</code> to handel the backend of our data produced from a Machine Learning Model </li>
+                        <li> Using <code>ReactJS</code> to display the data from backend to frontend </li>
+                        <li> this is our working <a href="https://github.com/Kaitlynheard2/vip-web-app" target="_blank">github repo</a> , open source</li>
+                        <li> Using <code>Unity2D</code> to translate hand gesteture signal to control signal to move the bunny in my game design</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Unity Game Design -- NYU Game Lab
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>1/2023-5/2023</strong> 
+                    <ul>
+                        <li><a href="https://itch.io/dashboard" target="_blank"> My Itch Dashboard </a></li>
+                        <li> <a href="https://michael-chen1.itch.io/exercise-2-marble-maze" target="_blank">Marble Maze</a>: Created by <code>Unity3D</code>, solve the maze by controlling the ball. <code>WebGL</code> supported </li>
+                        <li> <a href="https://michael-chen1.itch.io/exercise-3-shmup" target="_blank">Shmup</a>: Created by <code>Unity2D</code>, traditional Shmup game, space ships fighting enemies. <code>WebGL</code> supported </li>
+                        <li> <a href="https://sncan.itch.io/zombie-shooter" target="_blank">ZombieShmup</a>: Created by <code>Unity2D</code>, themed Shmup game with Zombies, player needs to kill the zombies and get to the portal. <code>WebGL</code> supported </li>
+                        <li> <a href="https://swl416.itch.io/sheep-adventure" target="_blank">SheepAdventure</a>: Created by <code>Unity3D</code>, This is a 3d adventure game where the player is a sheep that navigates through left clicks. Avoid the moles, penguins, flowers, and red walls. <code>WebGL</code> supported </li>
+                        <li> <a href="https://michael-chen1.itch.io/lava-escape" target="_blank">LavaEscape</a>: Created by <code>Unity2D</code>, Lava Escape is a 2D platformer where you have to run through dangerous caves and fight enemies to find the tough skeleton king and defeat him to escape his fiery domain. </li>
+                        <li> <a href="#" target="_blank">TowerDefense</a>: Created by <code>Unity2D</code> </li>
+                        
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="../src/downloadable/Michael resume.docx.pdf" download class="btn btn-primary mt-5" target="_blank">Download Resume</a>
+    
+          <!-- education part -->        
+          <div class=" education-content container mt-5 mb-5">
+            <div class="d-flex justify-content-sm-between">
+              <div class="card mr-3" style="width: 18rem; margin-right: 1rem;">
+                <img src="../src/nyu.png" class="card-img-top" alt="...">
+                <div class="card-body mb-1">
+                  <h5 class="card-title">NYU Tandon School of Engineering</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Bachelor of Science in Computer Science</h6>
+                  <p class="card-text">Graduated in May 2024 with a Bachelor of Science in Computer Science</p>
+                  <a href="https://www.nyu.edu/" class="btn btn-primary" style="text-align: center;" target="_blank">School Website</a>
+                </div>
+              </div>
+              <div class="card mr-3" style="width: 18rem; margin-right: 1rem;">
+                <img src="../src/nbps.png" class="card-img-top" alt="...">
+                <div class="card-body mb-1">
+                  <h5 class="card-title">North Broward Preparatory School</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">High School Diploma</h6>
+                  <p class="card-text">Graduated in June 2020 with a high school diploma</p>
+                  <a href="https://www.nordangliaeducation.com/nbps-florida" class="btn btn-primary" style="text-align: center;" target="_blank">School Website</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="../src/zzflms.png" class="card-img-top" alt="...">
+                <div class="card-body mb-1">
+                  <h5 class="card-title">Zhengzhou Foreign Language Middle School</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Middle School Diploma</h6>
+                  <p class="card-text">Graduated in June 2016 with a middle school diploma</p>
+                  <a href="http://www.zzfls.com.cn/website/english/english.html;jsessionid=5FBDAA13E2AE5A95AF6CBC298EC0088B" class="btn btn-primary" style="text-align: center;" target="_blank">School Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          
+            
+
+          
+      
+    
+    </div>
+
+    
+    
+    
+    
+    
+    
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#toggle-iframe').click(function() {
+          $('#game-iframe').toggle();
+        });
+      });
+      
+      var ctx = document.getElementById('pie-chart').getContext('2d');
+      var myPieChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: ['Python3', 'C++/C', 'Java', 'C#', 'JavaScript', 'HTML/CSS', 'Unity'],
+          datasets: [{
+            data: [85, 75, 70, 60, 80, 90, 70],
+            backgroundColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)',
+              'rgba(155, 99, 100, 1)'
+            ],
+            borderColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)',
+              'rgba(155, 99, 100, 1)'
+            ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          legend: {
+          position: 'right',
+          labels: {
+            fontSize: 18,
+            
+          }
+        }
+  }
+      });
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.15/dist/vanta.net.min.js"></script>
+    <script>
+      VANTA.NET({
+        el: "body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0xf7f7f7,
+        backgroundColor: 0x30007,
+        points: 11.00,
+        spacing: 14.00
+      })
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</body>
+</html>

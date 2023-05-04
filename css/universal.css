@@ -1,0 +1,28 @@
+/* .container{
+    background-color: black;
+    /* background-color: rgb(116, 149, 214); */
+
+body {
+    background-color: black;
+    color: white; /* set text color to white for better readability */
+    cursor: url("../src/boneCursor.png"), auto;
+ } 
+
+
+ body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  #body-content {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+
+
+ .bg-content{
+    background-color: #353232;
+    border-radius: 2%;
+ }
